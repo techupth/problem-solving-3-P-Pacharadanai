@@ -1,7 +1,8 @@
 // Exercise 1: Length of Last Word
 
 const lengthOfLastWord = function (s) {
-  //Start coding here
+    const filterEmtyword = s.split(" ").filter((word) => word !== "");
+    return filterEmtyword[filterEmtyword.length - 1].length;
 };
 
 const result1 = lengthOfLastWord("Hello World");

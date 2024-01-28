@@ -1,7 +1,7 @@
 // Exercise 2: Single Number
 
 const singleNumber = function (nums) {
-  // Start coding here
+    return (findNumber = nums.find((num) => nums.indexOf(num) === nums.lastIndexOf(num)));
 };
 
 const result1 = singleNumber([2, 2, 1]);
